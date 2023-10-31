@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+  <title>User Information Form</title>
+</head>
+<body>
+
+  <div class="container">
+    <p id="welcome-message">Hi! This is Viswanath. Welcome to the app. Please provide your information to get started.</p>
+    <form id="userForm">
+      <!-- Personal Information -->
+      <div class="section">
+        <h2>Personal Information</h2>
+        <div class="label-group">
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" name="firstName" required>
+        </div>
+        <div class="label-group">
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" name="lastName" required>
+        </div>
+
+        <div class="label-group">
+          <label for="sex">Sex:</label>
+          <label for="dob">Date of Birth:</label>
+        </div>
+        <select id="sex" name="sex" required>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+        <input type="date" id="dob" name="dob" required>
+
+        <div class="label-group">
+          <label for="streetAddress">Street Address:</label>
+          <label for="city">City:</label>
+        </div>
+        <input type="text" id="streetAddress" name="streetAddress" required>
+        <input type="text" id="city" name="city" required>
+
+        <div class="label-group">
+          <label for="state">State:</label>
+          <label for="zipCode">Zip Code:</label>
+        </div>
+        <input type="text" id="state" name="state" required>
+        <input type="text" id="zipCode" name="zipCode" required>
+
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" required>
+      </div>
+
+      <!-- Education Information -->
+      <div class="section">
+        <h2>Education Information</h2>
+        <label for="university">University/School:</label>
+        <input type="text" id="university" name="university" required>
+
+        <label for="qualification">Qualification:</label>
+        <input type="text" id="qualification" name="qualification" required>
+
+        <label for="certification">Certification:</label>
+        <input type="text" id="certification" name="certification" required>
+
+        <label for="skills">Skills:</label>
+        <input type="text" id="skills" name="skills" required>
+      </div>
+
+      <!-- Portfolio -->
+      <div class="section">
+        <h2>Portfolio</h2>
+        <label for="aboutMe">Few words about me:</label>
+        <textarea id="aboutMe" name="aboutMe" rows="4" required></textarea>
+
+        <label for="workExperience">Work Experience:</label>
+        <textarea id="workExperience" name="workExperience" rows="4" required></textarea>
+
+        <label for="otherInfo">Other Information:</label>
+        <textarea id="otherInfo" name="otherInfo" rows="4" required></textarea>
+      </div>
+
+      <!-- Upload Resume and Picture -->
+      <div class="section">
+        <h2>Uploads</h2>
+        <label for="resume">Upload Resume:</label>
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+
+        <label for="picture">Upload Picture:</label>
+        <input type="file" id="picture" name="picture" accept="image/*" required>
+      </div>
+
+      <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+
+    <!-- Display Information -->
+    <div id="displayInfo" class="hidden">
+      <h2>Thank You!</h2>
+      <div id="userInformation" class="user-info-form"></div>
+    </div>
+  </div>
+
+</body>
+</html>

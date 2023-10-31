@@ -1,0 +1,112 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+}
+
+.welcome-message {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.label-group {
+  display: flex;
+  flex-wrap: wrap; /* Allow labels to wrap to the next line */
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.label-group label {
+  width: 48%; /* Adjusted width for labels to fit two in a row */
+}
+
+/* Reduced width for specific input fields in personal information */
+#streetAddress,
+#city,
+#state,
+#zipCode,
+#country,
+#dob,
+#sex {
+  width: calc(48% - 5px);
+}
+
+/* Increased font size for the welcome message */
+#welcome-message {
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+input,
+select,
+textarea{
+  width: 100%; /* Full width for other fields */
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+}
+
+button {
+  background-color: #4caf50;
+  width:100px;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.hidden {
+  display: none;
+}
+
+#displayInfo {
+  text-align: center;
+  margin-top: 20px;
+  display: none; /* Initially hide displayInfo */
+}
+
+#userInformation {
+  margin-bottom: 20px;
+}
+
+#userInformation h2 {
+  margin-top: 10px;
+}
+
+#userInformation p {
+  margin: 5px 0;
+  max-width: 100%; /* Prevent text overflow */
+}
+#displayInfo p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
