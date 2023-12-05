@@ -1,0 +1,7 @@
+This PWA project integrates user authentication, email verification, and location-based features. Developed using Node.js and Express, it leverages Google Maps Geocoding API for obtaining complete addresses and OpenWeatherMap API for fetching real-time weather information.
+
+To run the project, clone the repository, navigate to the project directory, and install dependencies with npm install. Start the server on port 3000 using npm start and access the PWA in your browser at http://localhost:3000.
+
+Key features include user sign-up, sign-in, and guest access, accompanied by email verification and two-factor authentication (2FA). The server operates on port 3000, facilitating easy access to the PWA. The application also provides location-based services, displaying complete addresses and real-time weather details based on the user's geographical coordinates.
+
+This project is a lightweight, functional PWA, designed for simplicity and efficiency in user authentication and location-specific functionalities.
